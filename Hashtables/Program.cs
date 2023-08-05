@@ -83,7 +83,11 @@ namespace Hashtables
              };
             //5.2 Let's create the Dicitionary 
             Dictionary<string, Computers> ComputersDic = new Dictionary<string, Computers>();
-          
+            //6 Let's fill the Dictionary
+            foreach (Computers value in copts)
+            {
+                ComputersDic.Add(value.Name, value);
+            }
             
 
         }
