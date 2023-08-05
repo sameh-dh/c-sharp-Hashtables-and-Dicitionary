@@ -48,10 +48,10 @@ namespace Hashtables
             Console.WriteLine(Storedcpt2.Name);
 
             //4.3 Let's retrive all values from the computers hashtable
-               //In order to do that we will use a DictionaryEntry,
-              //so whenever we add new value to our hashtable
-             //a new object will be created inside of our Dictionary
-             foreach (DictionaryEntry entry in ComputersTable )
+            //In order to do that we will use a DictionaryEntry,
+            //so whenever we add new value to our hashtable
+            //a new object will be created inside of our Dictionary
+            foreach (DictionaryEntry entry in ComputersTable)
             {
                 Computers value = (Computers)(entry.Value); //cast the value into type student
                 Console.WriteLine(value.Name);
@@ -59,9 +59,9 @@ namespace Hashtables
 
             }
 
-             //4.4 another way with less code
+            //4.4 another way with less code
 
-             foreach (Computers value in ComputersTable.Values)
+            foreach (Computers value in ComputersTable.Values)
             {
                 Console.WriteLine(value.Name);
                 Console.WriteLine(value.Price);
@@ -83,12 +83,23 @@ namespace Hashtables
              };
             //5.2 Let's create the Dicitionary 
             Dictionary<string, Computers> ComputersDic = new Dictionary<string, Computers>();
-            //6 Let's fill the Dictionary
+            /* Step : 6
+             -------------------
+         Let's fill the Dictionary
+          */
             foreach (Computers value in copts)
             {
                 ComputersDic.Add(value.Name, value);
             }
-            
+            /* Step : 7
+            -------------------
+        Let's get Data using Dictioanry
+         */
+            //7.1 Let's get one value
+            Computers cptDic1 = ComputersDic["HP Spectre"];
+            Console.WriteLine("getting Hp Spectre from Dictionary");
+            Console.WriteLine(cptDic1.Price);
+         
 
         }
     }
