@@ -81,3 +81,22 @@ Create new Project
                 ComputersDic.Add(value.Name, value);
             }
 ```
+## Step 3 : Retreive Data using Hashtables 🥰
+
+```cs
+// One item :
+   Computers cptDic1 = ComputersDic["HP Spectre"];
+// All items :
+    for (int i =0; i<ComputersDic.Count;i++)
+            {
+                KeyValuePair<string, Computers> KeyValuePair = ComputersDic.ElementAt(i);
+                //get the key
+                string ComptKey = KeyValuePair.Key;
+                //get value 
+                Computers comptValue = KeyValuePair.Value;
+                //Let's print the data 
+                Console.WriteLine(comptValue.Name);
+                Console.WriteLine(comptValue.Price);
+            }
+
+```
