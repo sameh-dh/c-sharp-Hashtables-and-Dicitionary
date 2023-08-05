@@ -1,8 +1,9 @@
 ﻿using System;
+//To use Dictionary : Dictionary are generic collection
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+//to use Hashtables : Hashtables are not a generic collection
+using System.Collections;
+
 
 namespace Hashtables
 {
@@ -10,6 +11,22 @@ namespace Hashtables
     {
         static void Main(string[] args)
         {
+            /* Step : 2
+             -------------------
+              Let's create a Hashtable
+            */
+            Hashtable ComputersTable = new Hashtable();
+
+            /* Step : 3
+             -------------------
+              Let's create some computers and add them to the hashtable
+            */
+            Computers cpt1 = new Computers(1, "HP Spectre", 1550);
+            Computers cpt2 = new Computers(1, "Microsoft Surface", 1100);
+            Computers cpt3 = new Computers(1, "Asus ROG Zephyrus G14", 1200);
+            Computers cpt4 = new Computers(1, "MSI Prestige", 1400);
+            Computers cpt5 = new Computers(1, "MacBook Pro", 2000);
+           
         }
     }
 

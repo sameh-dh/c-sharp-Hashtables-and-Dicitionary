@@ -7,7 +7,7 @@ Create new Project
 //Console App (.NET framework)
 ```
 
-## Step 1: Create Computers Class
+## Step 1 : Create Computers Class
 
 ```cs
     class Computers
@@ -26,10 +26,10 @@ Create new Project
     }
 ```
 
-## Step 2: Create Your first hashtable
+## Step 2 : Create Your first hashtable
 ```cs
  using System.Collections;
- 
+
  Hashtable ComputersTable = new Hashtable();
 ```
 
