@@ -9,10 +9,7 @@ Create new Project
 
 ## Step 1: Create Computers Class
 
-```c#
-    /*
-    Let's create a Computers class to use it in the hashtable
-     */
+```cs
     class Computers
     {
         //porperties
@@ -28,3 +25,11 @@ Create new Project
         }
     }
 ```
+
+## Step 2: Create Your first hashtable
+```cs
+ using System.Collections;
+ 
+ Hashtable ComputersTable = new Hashtable();
+```
+
