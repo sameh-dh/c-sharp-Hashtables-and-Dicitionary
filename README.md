@@ -33,3 +33,11 @@ Create new Project
  Hashtable ComputersTable = new Hashtable();
 ```
 
+## Step 3 : Create Computers Objects then add them to the hashtable
+```cs
+ Computers cpt1 = new Computers(1, "HP Spectre", 1550);
+ 
+ ComputersTable.Add(cpt1.Id, cpt1);
+           
+```
+
