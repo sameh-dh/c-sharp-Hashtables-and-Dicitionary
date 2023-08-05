@@ -72,7 +72,7 @@ namespace Hashtables
            Good job now let's Discover Dictionaries
          */
             //To define Dicitionary we write : Dictionary<Tkey Tvalue>
-            //Let's create new Computer array
+            //5.1 Let's create new Computer array
             Computers[] copts =
             {
                new Computers(1, "HP Spectre", 1550),
@@ -81,6 +81,10 @@ namespace Hashtables
                new Computers(4, "MSI Prestige", 1400),
                new Computers(5, "MacBook Pro", 2000),
              };
+            //5.2 Let's create the Dicitionary 
+            Dictionary<string, Computers> ComputersDic = new Dictionary<string, Computers>();
+          
+            
 
         }
     }
