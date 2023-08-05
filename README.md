@@ -81,7 +81,7 @@ Create new Project
                 ComputersDic.Add(value.Name, value);
             }
 ```
-## Step 3 : Retreive Data using Hashtables 🥰
+## Step 3 : Retreive Data using Dictionary 🥰
 
 ```cs
 // One item :
