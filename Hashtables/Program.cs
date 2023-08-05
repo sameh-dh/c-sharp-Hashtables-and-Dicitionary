@@ -40,11 +40,11 @@ namespace Hashtables
               Let's retreive Data using hashtables
             */
 
-            //Let's retreive one item with known id from the hashtable
+            //4.1 Let's retreive one item with known id from the hashtable
 
             Computers Storedcpt2 = (Computers)ComputersTable[cpt2.Id];//cast the object with type Computers
 
-            //okay now try to console.write it
+            //4.2 okay now try to console.write it
             Console.WriteLine(Storedcpt2.Name);
 
 
