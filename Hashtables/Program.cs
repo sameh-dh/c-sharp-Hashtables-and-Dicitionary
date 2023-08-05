@@ -3,7 +3,7 @@
 using System.Collections.Generic;
 //to use Hashtables : Hashtables are not a generic collection
 using System.Collections;
-
+using System.Linq;
 
 namespace Hashtables
 {
@@ -95,11 +95,23 @@ namespace Hashtables
             -------------------
         Let's get Data using Dictioanry
          */
-            //7.1 Let's get one value
+            //7.1 Let's get one value using the name
+            //note : you can use .ContainsKey("Hp spectre") to check if key exists
             Computers cptDic1 = ComputersDic["HP Spectre"];
             Console.WriteLine("getting Hp Spectre from Dictionary");
             Console.WriteLine(cptDic1.Price);
-         
+            //7.2 Let's get all data usning ElementAt() to return the key-value pair stored at the index
+            for (int i =0; i<ComputersDic.Count;i++)
+            {
+                KeyValuePair<string, Computers> KeyValuePair = ComputersDic.ElementAt(i);
+                //get the key
+                string ComptKey = KeyValuePair.Key;
+                //get value 
+                Computers comptValue = KeyValuePair.Value;
+                //Let's print the data 
+                Console.WriteLine(comptValue.Name);
+                Console.WriteLine(comptValue.Price);
+            }
 
         }
     }
