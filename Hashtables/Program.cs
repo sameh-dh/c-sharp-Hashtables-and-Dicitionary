@@ -67,6 +67,21 @@ namespace Hashtables
                 Console.WriteLine(value.Price);
             }
 
+            /* Step : 5
+          -------------------
+           Good job now let's Discover Dictionaries
+         */
+            //To define Dicitionary we write : Dictionary<Tkey Tvalue>
+            //Let's create new Computer array
+            Computers[] copts =
+            {
+               new Computers(1, "HP Spectre", 1550),
+               new Computers(2, "Microsoft Surface", 1100),
+               new Computers(3, "Asus ROG Zephyrus G14", 1200),
+               new Computers(4, "MSI Prestige", 1400),
+               new Computers(5, "MacBook Pro", 2000),
+             };
+
         }
     }
 

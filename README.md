@@ -1,6 +1,6 @@
 # c-sharp-Hashtables-and-Dicitionary
 
-Hashtables with c#
+Hashtable
 
 ```c#
 Create new Project
@@ -52,3 +52,4 @@ Create new Project
             }
 ```
 
+# Dicitonary 
