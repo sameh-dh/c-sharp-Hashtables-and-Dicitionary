@@ -40,4 +40,15 @@ Create new Project
  ComputersTable.Add(cpt1.Id, cpt1);
            
 ```
+## Step 4 : Retreive Data using Hashtables 🥰
+```cs
+// One item :
+ Computers Storedcpt2 = (Computers)ComputersTable[cpt2.Id];
+// All items :
+    foreach (Computers value in ComputersTable.Values)
+            {
+                Console.WriteLine(value.Name);
+                Console.WriteLine(value.Price);
+            }
+```
 

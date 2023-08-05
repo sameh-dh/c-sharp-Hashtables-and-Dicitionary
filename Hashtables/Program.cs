@@ -47,6 +47,25 @@ namespace Hashtables
             //4.2 okay now try to console.write it
             Console.WriteLine(Storedcpt2.Name);
 
+            //4.3 Let's retrive all values from the computers hashtable
+               //In order to do that we will use a DictionaryEntry,
+              //so whenever we add new value to our hashtable
+             //a new object will be created inside of our Dictionary
+             foreach (DictionaryEntry entry in ComputersTable )
+            {
+                Computers value = (Computers)(entry.Value); //cast the value into type student
+                Console.WriteLine(value.Name);
+                Console.WriteLine(value.Price);
+
+            }
+
+             //4.4 another way with less code
+
+             foreach (Computers value in ComputersTable.Values)
+            {
+                Console.WriteLine(value.Name);
+                Console.WriteLine(value.Price);
+            }
 
         }
     }
