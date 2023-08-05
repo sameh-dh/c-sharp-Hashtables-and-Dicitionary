@@ -22,11 +22,32 @@ namespace Hashtables
               Let's create some computers and add them to the hashtable
             */
             Computers cpt1 = new Computers(1, "HP Spectre", 1550);
-            Computers cpt2 = new Computers(1, "Microsoft Surface", 1100);
-            Computers cpt3 = new Computers(1, "Asus ROG Zephyrus G14", 1200);
-            Computers cpt4 = new Computers(1, "MSI Prestige", 1400);
-            Computers cpt5 = new Computers(1, "MacBook Pro", 2000);
-           
+            Computers cpt2 = new Computers(2, "Microsoft Surface", 1100);
+            Computers cpt3 = new Computers(3, "Asus ROG Zephyrus G14", 1200);
+            Computers cpt4 = new Computers(4, "MSI Prestige", 1400);
+            Computers cpt5 = new Computers(5, "MacBook Pro", 2000);
+
+            //Let's add the computers to the hashtable
+            ComputersTable.Add(cpt1.Id, cpt1);
+            ComputersTable.Add(cpt2.Id, cpt2);
+            ComputersTable.Add(cpt3.Id, cpt3);
+            ComputersTable.Add(cpt4.Id, cpt4);
+            ComputersTable.Add(cpt5.Id, cpt5);
+
+
+            /* Step : 4
+             -------------------
+              Let's retreive Data using hashtables
+            */
+
+            //Let's retreive one item with known id from the hashtable
+
+            Computers Storedcpt2 = (Computers)ComputersTable[cpt2.Id];//cast the object with type Computers
+
+            //okay now try to console.write it
+            Console.WriteLine(Storedcpt2.Name);
+
+
         }
     }
 
