@@ -114,18 +114,29 @@ namespace Hashtables
             }
 
             /* Step : 8
-            -------------------
-        Let's update a value
-         */
+             -------------------
+             Let's update a value
+            */
             // to update value : DictionaryName[key] = new object 
 
             ComputersDic["HP Spectre"] = new Computers(1, "Hp Spectre 360", 2000);
-            Console.WriteLine("update key");
             //let's get the element and check the update 
+            Console.WriteLine("update key");
             KeyValuePair<string, Computers> firstElement= ComputersDic.ElementAt(0);
             Console.WriteLine(firstElement.Key);
             Console.WriteLine(firstElement.Value.Name);
 
+            /* Step : 8
+             -------------------
+             Let's remove a value
+            */
+            // to Remove value : DictionaryName.Remove[key] 
+            ComputersDic.Remove("HP Spectre");
+            //let's get the element and check the Remove
+            Console.WriteLine("Remove key");
+            KeyValuePair<string, Computers> newfirstElement = ComputersDic.ElementAt(0);
+            Console.WriteLine(newfirstElement.Key);
+            Console.WriteLine(newfirstElement.Value.Name);
         }
     }
 

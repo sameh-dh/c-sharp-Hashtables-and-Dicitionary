@@ -1,12 +1,11 @@
 # c-sharp-Hashtables-and-Dicitionary
 
-Hashtable
 
 ```c#
 Create new Project
 //Console App (.NET framework)
 ```
-
+# Hashtable
 ## Step 1 : Create Computers Class 😒
 
 ```cs
@@ -106,5 +105,15 @@ Create new Project
 ```cs
 // to update value : DictionaryName[key] = new object 
 ComputersDic["HP Spectre"] = new Computers(1, "Hp Spectre 360", 2000);
+//Note : using this method the key will be always the same only the value name will change
 
 ```
+
+## Step 5 : Remove Data using Dictionary 😅
+
+```cs
+// to Remove value : DictionaryName.Remove[key] 
+ComputersDic.Remove("HP Spectre");
+```
+
+### We are Done Have a nice day 🌸🌸🌸
