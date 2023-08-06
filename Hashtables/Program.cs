@@ -113,6 +113,19 @@ namespace Hashtables
                 Console.WriteLine(comptValue.Price);
             }
 
+            /* Step : 8
+            -------------------
+        Let's update a value
+         */
+            // to update value : DictionaryName[key] = new object 
+
+            ComputersDic["HP Spectre"] = new Computers(1, "Hp Spectre 360", 2000);
+            Console.WriteLine("update key");
+            //let's get the element and check the update 
+            KeyValuePair<string, Computers> firstElement= ComputersDic.ElementAt(0);
+            Console.WriteLine(firstElement.Key);
+            Console.WriteLine(firstElement.Value.Name);
+
         }
     }
 

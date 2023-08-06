@@ -100,3 +100,11 @@ Create new Project
             }
 
 ```
+
+## Step 4 : update Data using Dictionary 🤗
+
+```cs
+// to update value : DictionaryName[key] = new object 
+ComputersDic["HP Spectre"] = new Computers(1, "Hp Spectre 360", 2000);
+
+```
